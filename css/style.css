@@ -1,0 +1,343 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1170px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-header {
+  margin-bottom: 47px;
+}
+
+.main-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  line-height: 47px;
+  letter-spacing: 1px;
+
+  text-align: center;
+  margin: 0;
+  margin-top: 60px;
+}
+
+.site-navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 46px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-navigation a {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #ff7931;
+}
+
+.main-container .poster {
+  height: 464px;
+  padding-top: 0.1px; /*чтбы не было схлопывания margin*/
+  padding-bottom: 0.1px;
+
+  background-color: #cccccc00;
+  background-image: url("../img/hotel.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.poster-logo {
+  margin-top: 46px;
+  margin-bottom: 32px;
+}
+
+.poster-logo img {
+  width: 55px;
+  height: 55px;
+
+  display: block; /* блок для выравнивания по центру*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poster p {
+  text-align: center;
+  color: #ffffff;
+
+  margin: 0;
+}
+
+.poster-name {
+  font-size: 72px;
+  line-height: 84px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.poster .poster-description {
+  margin-top: 139px;
+}
+
+.overview {
+  margin-top: 44px;
+}
+
+.overview-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.overview-list li {
+  width: 370px;
+}
+
+.overview-item h3 {
+  margin-top: 20px;
+  margin-bottom: 11px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  line-height: 31px;
+
+  text-align: left;
+}
+
+.overview-item p {
+  margin: 0;
+}
+
+.overview-item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.overview-item a:hover,
+.overview-item a:focus {
+  color: #ff7931;
+}
+
+.tickets {
+  margin-top: 51px;
+  margin-bottom: 50px;
+  padding-top: 0.1px; /*чтбы не было схлопывания margin*/
+  padding-bottom: 0.1px;
+
+  background-color: #f7f7f7;
+  background-image: url("../img/ellipse.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 707px, cover;
+}
+
+.tickets-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tickets-list li:first-child h3 {
+  margin-top: 0;
+}
+
+.tickets-list li::after {
+  content: "";
+  display: block;
+  margin: 25px auto 0 auto;
+  width: 100px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tickets-list li:last-child::after {
+  display: none;
+}
+
+.tickets h2 {
+  margin-top: 33px;
+}
+
+.tickets-list {
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+
+  list-style-type: none;
+  text-align: center;
+}
+
+.tickets-item {
+  width: 370px;
+}
+
+.tickets-item h3 {
+  margin: 0;
+  margin-top: 24px;
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  line-height: 31px;
+  text-align: center;
+}
+
+.tickets-item p {
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tickets-btn {
+  margin-top: 48px;
+  margin-bottom: 36px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+
+  display: inline-block;
+  padding: 11px 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ff7931;
+  text-decoration: none;
+}
+
+.tickets-btn::after {
+  content: url("../img/shape.svg");
+  vertical-align: middle;
+  padding-left: 8px;
+}
+
+.tickets-btn:hover,
+.tickets-btn:focus {
+  background-color: #ff793197;
+}
+
+.main-footer {
+  padding-top: 0.1px; /*чтбы не было схлопывания margin*/
+  padding-bottom: 0.1px;
+  background-color: #575757;
+  color: #ffffff;
+}
+
+.main-footer h2 {
+  margin: 0;
+  margin-top: 26px;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+
+.footer-links {
+  margin: 0;
+  margin-top: 32px;
+  padding-left: 0;
+  padding-bottom: 46px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  list-style-type: none;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+}
+
+.footer-navigation a {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  color: #ff7931;
+}
+
+.footer-social {
+  margin: 0;
+  margin-top: 42px;
+  margin-bottom: 46px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  list-style-type: none;
+}
+
+.footer-social li {
+  margin-right: 14px;
+}
+
+.footer-social li:last-child {
+  margin-right: 0;
+}
+
+.footer-social a {
+  display: block;
+  width: 47px;
+  height: 47px;
+}
+
+.footer-social img {
+  text-align: center;
+}
+
+.footer-social .instagram-icon {
+  background: #fff url(../img/instagram_icon.svg) no-repeat center center;
+}
+
+.footer-social .facebook-icon {
+  background: #fff url(../img/facebook_icon.svg) no-repeat center center;
+}
+
+.footer-social .twitter-icon {
+  background: #fff url(../img/twitter_icon.svg) no-repeat center center;
+}
